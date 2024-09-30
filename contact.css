@@ -1,0 +1,85 @@
+#contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 120px 30px;
+    color: var(--dark-blue-color);
+}
+.contact-me{
+    position: relative;
+    width: 410px;
+    height: 320px;
+    background-color: var(--blue4-color);
+}
+.contact-title{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 700;
+    top: 48px;
+    left: -50px;
+}
+.star-icon{
+    position: absolute;
+    width: 70px;
+    height: auto;
+    top: 20px;
+    right: 20px;
+    z-index: 60;
+}
+.contact-description{
+    background: var(--blue4-color);
+    padding: 50px 20px 20px 20px;
+    margin-left: 35px;
+    width: 350px;
+    height: auto;
+    font-size: 17px;
+}
+.contact-description1{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.right-section{
+    width: 470px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: "Bai Jamjuree";
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #FFF9EF; /* Light background for input */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+textarea {
+    height: 150px; /* Adjust height as needed */
+    resize: none; /* Disable resizing */
+}
+.submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #283953; /* Dark blue text color */
+    background-color: #aad4ff; /* Light blue button background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.send-icon{
+    margin-right: 10px;
+}
