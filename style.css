@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #000000;
+    --gray-background: #ebf0fa;
+}
+ .review-item{
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+ }
+ .special-font{
+    font-family: 'Gloria Hallelujah';
+ }
+ .education-section li::before {
+    content: "-"; 
+    position: absolute;
+    left: -1em; 
+}
+.education-section li {
+    position: relative;
+    transform: translateX(1.3em);
+}
+.border-specify{
+    border: 2px solid var(--border-color);
+}
+.bg-gray{
+    background: #ebf0fa;
+}
+.border-t{
+    border-top: 2px solid var(--border-color);
+}
+.text-color{
+    color: var(--text-color);
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--border-color);
+}
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: #1e1e1e;
+            --text-color: #ffffff;
+            --border-color: #b59d6e;
+            --gray-background: #2c2c2c;
+            --highlight-background: #3a3a3a;
+        }
+        .form-control{
+            background: #363535;
+            color: #ffffff;
+        }
+        .form-control:focus {
+            outline: none;
+            box-shadow: none;
+            background: #363535;
+            color: #ffffff;
+        }
+    }
+@media (max-width: 576px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar{
+        margin-top: 0.6em;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-bar a{
+        margin: 0 0.2em 0 0.2em;
+    }
+}

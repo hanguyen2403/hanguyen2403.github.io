@@ -1,8 +1,6 @@
 #about {
   background: var(--beige-color);
-}
-
-#about {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -8,9 +8,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     font-weight: 700;
     font-size: 50px;
 }
+.title-text{
+    position: relative;
+    z-index: 70;
+}
+/* .title-frame{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 30px;
+    background: var(--blue4-color);
+    z-index: 60;
+} */
 .container-services{
     display: flex;
     justify-content: space-evenly;
@@ -26,14 +39,17 @@
     position: relative;
     width: 250px;
     height: 300px;
-    border: solid 4px var(--dark-blue-color);
+    z-index: 50;
+}
+.content{
+    position: relative;
     padding: 60px 20px;
     background: #FFF9EF;
+    border: solid 4px var(--dark-blue-color);
     z-index: 45;
 }
 .service-item-content{
     position: relative;
-    z-index: 50;
     margin-bottom: 10px;
 }
 .service-item-icon{
@@ -48,10 +64,15 @@
 .service-item-description{
     color: var(--text-color-light);
 }
-/* .service-item:hover .frame{
+.service-item:hover{
+    cursor: pointer;
+}
+.service-item:hover .frame{
     position: absolute;
     z-index: 40;
     width: 100%;
     height: 100%;
+    left: 20px;
+    top: 20px;
     border: 5px solid var(--blue2-color);
-} */
+}
